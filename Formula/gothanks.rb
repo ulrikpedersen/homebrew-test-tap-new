@@ -6,6 +6,13 @@ class Gothanks < Formula
   license "MIT"
   revision 1
 
+  bottle do
+    root_url "https://github.com/ulrikpedersen/homebrew-test-tap-new/releases/download/gothanks-0.3.0_1"
+    cellar :any_skip_relocation
+    sha256 "fd9ba06f01d89a0d22fdb29eb772a33a680d82114fabe3cedcddafcfe1be41b7" => :catalina
+    sha256 "81bbcb8277b8aa6044dd0096df217099c6812c96fd6f6b870cc26bc7d9db86db" => :x86_64_linux
+  end
+
   depends_on "go" => :build
 
   def install
